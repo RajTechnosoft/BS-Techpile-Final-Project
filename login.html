@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .bg-myColor {
+        background: linear-gradient(45deg, #20b5ff, #ff5e2d) !important;
+      }
+      .text-color1 {
+        color: blue;
+      }
+      .text-color1 {
+        color: red;
+      }
+      .social .fa-brands,
+      .social .fa-solid {
+        background: transparent !important;
+        color: red !important;
+        margin-left: 0.5rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        line-height: 1.75rem;
+        border-radius: 0.3rem;
+        box-sizing: border-box;
+        border: 1px solid white;
+        transition: all 0.5s;
+        /* padding: 0.3rem; */
+        text-align: center;
+      }
+      .social .fa-brands:hover,
+      .social .fa-solid:hover {
+        background: linear-gradient(45deg, #20b5ff, #ff5e2d) !important;
+        color: white !important;
+
+        transition: all 0.5s;
+
+        border: 1px solid red;
+        /* padding: 0.3rem; */
+        /* text-align: center; */
+      }
+      #menu {
+        background-color: transparent;
+      }
+      .nav-item .fa-solid {
+        margin-right: 0.5rem;
+      }
+      .carousel-item img {
+        height: 500px;
+      }
+      marquee img {
+        margin-left: 2rem;
+      }
+      .card img {
+        height: 150px;
+      }
+      .gallary img {
+        width: 100%;
+      }
+      .list-grou li a {
+        color: white;
+        text-decoration: none;
+      }
+      .list-grou li a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+      .list-gro li a {
+        color: white;
+        text-decoration: none;
+      }
+      .bottom a {
+        color: danger;
+        text-decoration: none;
+      }
+      .bottom a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row top1 p-3 bg-light d-none d-md-flex">
+        <div class="col-sm-3 text-center fs-5 bg-light social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="col-sm-3 social">
+          <i class="fa-solid fa-envelope me-1"></i>erajmishra000@gmail.com
+        </div>
+        <div class="col-sm-3 social">
+          <i class="fa-solid fa-phone me-1"></i>+91 6387874250 || +11 458765678
+        </div>
+        <div class="col-sm-3 social">
+          <span class="btn btn-outline-danger rounded">Contact Us</span>
+        </div>
+      </div>
+      <div class="row header bg-light">
+        <div class="col-12 menu">
+          <!-- start menu -->
+          <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+            <a class="navbar-brand d-flex align-items-center" href="index7.html"
+              ><img
+                src="images/logo1.jpg"
+                class="img-fluid"
+                style="max-height: 3rem; border-radius: 100%"
+                alt=""
+              />
+              <p class="fw-bolder text-danger fs-5 mt-3">Technosoft</p></a
+            >
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="index7.html"
+                      ><i class="fa-solid fa-house"></i>Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about"
+                      ><i class="fa-solid fa-address-card"></i>About Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services"
+                      ><i class="fa-solid fa-laptop"></i>Servises</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-camera"></i>Gallary
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="pictureGallary.html"
+                          >Image</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Vedio</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html"
+                      ><i class="fa-solid fa-right-to-bracket"></i>Login</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Register.html"
+                      ><i class="fa-solid fa-user-plus"></i>Register</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ContactUS"
+                      href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- end menu -->
+        </div>
+      </div>
+    </div>
+    <div class="container register">
+      <form action="">
+        <div class="row mt-5">
+          <div class="h4 text-center">
+            Login <b class="text-color1"> Now </b>
+          </div>
+          <div
+            class="col-sm-6 mx-auto bg-white rounded p-3 mt-5 mb-5 shadow-lg"
+          >
+            <div class="row mx-auto">
+              <div class="col-sm-12">
+                <p class="p-0 m-0 text-start mb-2 fw-normal">Email</p>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email..."
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <p class="p-0 m-0 text-start mb-2 fw-normal">Password</p>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-user"></i
+                  ></span>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter your password..."
+                    aria-label="password"
+                    aria-describedby="basic-addon1"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <button
+                  class="btn bg-danger text-light fw-bold shadow-lg shadow-danger"
+                  type="submit"
+                >
+                  Login
+                </button>
+              </div>
+              <div class="col-sm-12 mt-3">
+                <p>
+                  Haven't account?
+                  <a href="Register.html" class="text-danger link">Register</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- contact us modal start -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="ContactUS"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fa-solid fa-envelope"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Username.."
+                aria-label="email"
+                aria-describedby="basic-addon1"
+                required
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Mobile Number"
+                aria-label="password"
+                aria-describedby="basic-addon1"
+              />
+              <br />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fa-solid fa-envelope"></i
+              ></span>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Your Email.."
+                aria-label="email"
+                aria-describedby="basic-addon1"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Message</label
+              >
+              <textarea
+                class="form-control resize-none"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-danger">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact us modal ends -->
+    <div class="container-fluid">
+      <!-- footer Start -->
+      <div class="row bg-dark footer p-2 mt-5">
+        <div class="col-sm-4 ps-5">
+          <br /><br />
+          <img
+            src="images/f1.png"
+            alt=""
+            style="max-width: 200px"
+            class="img-fluid"
+          /><br /><br />
+          <img
+            src="images/f2.png"
+            alt=""
+            style="max-width: 200px"
+            class="img-fluid"
+          /><br /><br />
+          <img
+            src="images/f3.png"
+            alt=""
+            style="max-width: 200px"
+            class="img-fluid"
+          /><br />
+          <p class="text-light opacity-75 fw-bold">stay connected</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook text-light fs-5 mx-2"></i
+            ></a>
+            <a href="https://www.whatsapp.com" target="_blank"
+              ><i class="fab fa-whatsapp text-light fs-5 mx-2"></i
+            ></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fab fa-linkedin text-light fs-5 mx-2"></i
+            ></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram text-light fs-5 mx-2"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-sm-4 text-light mt-5">
+          <p class="fw-normal fs-5">Usefull Links</p>
+          <div class="links d-flex">
+            <ul class="list-grou">
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>services</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>gallary</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>summer
+                  training</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>winter
+                  training</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>apprentice</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>contact us</a
+                >
+              </li>
+            </ul>
+            <ul class="list-grou">
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>Home</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>about</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>services</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>gallary</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>summer
+                  training</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>winter
+                  training</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="col-sm-4 text-light mt-5 w-100">
+            <p class="fw-normal fs-5">Contact Address</p>
+            <div class="links w-100 mt-4">
+              <ul class="list-gro">
+                <li class="list-group-item mt-3 opacity-75 w-50">
+                  <a href="#"
+                    ><i class="fa-solid fa-home me-2"></i>Plot No-43, Behind H.P
+                    Petrol Pump, Tedhi Pulia Ring Rd, Sector 5, Vikas Nagar,
+                    Lucknow, Uttar Pradesh 226022</a
+                  >
+                </li>
+                <li class="list-group-item mt-3 opacity-75">
+                  <a href="#"
+                    ><i class="fa-solid fa-phone me-2"></i>+91 45674567456</a
+                  >
+                </li>
+                <li class="list-group-item mt-3 opacity-75">
+                  <a href="#"
+                    ><i class="fa-solid fa-phone me-2"></i>+91 45674567456</a
+                  >
+                </li>
+                <li class="list-group-item mt-3 opacity-75">
+                  <a href="#"
+                    ><i class="fa-solid fa-envelope me-2"></i>abc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom row bg-dark">
+        <p class="text-center mt-5 text-light opacity-75">
+          Ⓒ 2025 <a class="text-color1">RajTechnosoft</a> 2025 | Developed By
+          <a class="text-color1">RajTechnosoft</a> Cell
+        </p>
+      </div>
+      <!-- footer end -->
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="header.css" />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .bg-myColor {
+        background: linear-gradient(45deg, #20b5ff, #ff5e2d) !important;
+      }
+      .text-color1 {
+        color: blue;
+      }
+      .text-color1 {
+        color: red;
+      }
+      .social .fa-brands,
+      .social .fa-solid {
+        background: transparent !important;
+        color: red !important;
+        margin-left: 0.5rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        line-height: 1.75rem;
+        border-radius: 0.3rem;
+        box-sizing: border-box;
+        border: 1px solid white;
+        transition: all 0.5s;
+        /* padding: 0.3rem; */
+        text-align: center;
+      }
+      .social .fa-brands:hover,
+      .social .fa-solid:hover {
+        background: linear-gradient(45deg, #20b5ff, #ff5e2d) !important;
+        color: white !important;
+
+        transition: all 0.5s;
+
+        border: 1px solid red;
+        /* padding: 0.3rem; */
+        /* text-align: center; */
+      }
+      #menu {
+        background-color: transparent;
+      }
+      .nav-item .fa-solid {
+        margin-right: 0.5rem;
+      }
+      .carousel-item img {
+        height: 600px;
+      }
+      marquee img {
+        margin-left: 2rem;
+      }
+      .services .card img {
+        height: 150px;
+      }
+      .team .card img {
+        height: 300px;
+      }
+      .gallary img {
+        width: 100%;
+      }
+      .footer {
+        min-height: 450px;
+      }
+      .bottom {
+        height: 100px;
+      }
+      .list-grou li a {
+        color: white;
+        text-decoration: none;
+      }
+      .list-grou li a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+      .list-gro li a {
+        color: white;
+        text-decoration: none;
+      }
+      .bottom a {
+        color: danger;
+        text-decoration: none;
+      }
+      .bottom a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="row top1 p-3 bg-light d-none d-md-flex">
+        <div class="col-sm-3 text-center fs-5 bg-light social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="col-sm-3 social">
+          <i class="fa-solid fa-envelope me-1"></i>erajmishra000@gmail.com
+        </div>
+        <div class="col-sm-3 social">
+          <i class="fa-solid fa-phone me-1"></i>+91 6387874250 || +11 458765678
+        </div>
+        <div class="col-sm-3 social">
+          <span class="btn btn-outline-danger rounded">Contact Us</span>
+        </div>
+      </div>
+      <div class="row header bg-light">
+        <div class="col-12 menu">
+          <!-- start menu -->
+          <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+            <a class="navbar-brand d-flex align-items-center" href="#"
+              ><img
+                src="images/logo1.jpg"
+                class="img-fluid"
+                style="max-height: 3rem; border-radius: 100%"
+                alt=""
+              />
+              <p class="fw-bolder text-danger fs-5 mt-3">Technosoft</p></a
+            >
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="index7.html"
+                      ><i class="fa-solid fa-house"></i>Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about"
+                      ><i class="fa-solid fa-address-card"></i>About Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services"
+                      ><i class="fa-solid fa-laptop"></i>Servises</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-camera"></i>Gallary
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="pictureGallary.html"
+                          >Image</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Vedio</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html"
+                      ><i class="fa-solid fa-right-to-bracket"></i>Login</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Register.html"
+                      ><i class="fa-solid fa-user-plus"></i>Register</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ContactUS"
+                      href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- end menu -->
+        </div>
+      </div>
+      <!-- slider start -->
+      <div class="row slider">
+        <div class="col-12">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/slide2.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide3.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- slider end -->
+      <!-- start about us  -->
+      <div class="row about-us" id="about">
+        <div class="h4 text-center my-4">About <b class="text-info">Us</b></div>
+        <div class="col-sm-6">
+          <p class="p-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+            tempore sint dolore ut perferendis eveniet facilis incidunt,
+            consectetur maxime possimus suscipit animi sequi numquam
+            perspiciatis sunt amet ad saepe, aliquid hic ab tempora ipsam
+            exercitationem. Repellat possimus in, rem cupiditate totam eveniet?
+            Earum voluptate eos similique optio odi.
+            <br />
+            <i class="fa-solid fa-circle-check pe-2 text-info mt-3"></i
+            ><span>Get one crore for free</span><br />
+
+            <i class="fa-solid fa-circle-check pe-2 text-info"></i
+            ><span>Get Lucky Draw of 400cr</span>
+            <span class="d-block my-2">
+              <button class="btn btn-outline-info mt-3">
+                Read More <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </span>
+          </p>
+        </div>
+
+        <div class="col-sm-6">
+          <img
+            src="https://t3.ftcdn.net/jpg/01/28/44/76/360_F_128447604_6deYSrg6bgH2F3YaoU0icdhvxNu4ReDN.jpg"
+            alt=""
+            class="img-fluid rounded"
+            style="max-height: 300px; width: 90%"
+          />
+        </div>
+      </div>
+      <!-- end about us  -->
+      <!-- recruiters start -->
+      <div class="row recruiter bg-light mt-5">
+        <div class="col-sm-12">
+          <marquee direction="">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/1f/The_IMG_Media_broadcasting_company_logo.png"
+              alt=""
+              height="50px"
+            />
+            <img
+              src="https://st2.depositphotos.com/4035913/6124/i/450/depositphotos_61243733-stock-illustration-business-company-logo.jpg"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=48&id=znqq179L1K9g&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=50&id=30276&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=50&id=jmUB0A64IrSB&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            />
+            <img
+              src="https://img.icons8.com/?size=50&id=9929&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=48&id=YJfJ0JM5Imsj&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=48&id=gav46YArUSy1&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=50&id=jmUB0A64IrSB&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            />
+
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/1f/The_IMG_Media_broadcasting_company_logo.png"
+              alt=""
+              height="50px"
+            />
+            <img
+              src="https://st2.depositphotos.com/4035913/6124/i/450/depositphotos_61243733-stock-illustration-business-company-logo.jpg"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=48&id=znqq179L1K9g&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=50&id=30276&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=50&id=jmUB0A64IrSB&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            />
+            <img
+              src="https://img.icons8.com/?size=50&id=9929&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=48&id=YJfJ0JM5Imsj&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=48&id=gav46YArUSy1&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            /><img
+              src="https://img.icons8.com/?size=50&id=jmUB0A64IrSB&format=png"
+              alt=""
+              behaviour
+              height="50px"
+            />
+          </marquee>
+        </div>
+      </div>
+      <!-- recruiters end -->
+      <!--servises start  -->
+      <div class="row mt-5 services" id="services">
+        <div class="h4 text-center">
+          Our <b class="text-color1">Services</b>
+        </div>
+        <div class="col-10 mx-auto my-4">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card shadow-lg" style="width: 100%">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSdGuhJlqxCgmx_rhm_sZtU9QQzFsnAV4_LA&s"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Software Development</h5>
+                  <p class="card-text">
+                    Software development is the process of designing, building,
+                    testing, and maintaining software applications, encompassing
+                    everything.
+                  </p>
+                  <a href="#" class="btn btn-danger">Click here</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow-lg" style="width: 100%">
+                <img
+                  src="https://itspectrumsolutions.com/wp-content/uploads/2024/04/1_pE2fOVDikEUwiQJlh4ggzg.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    Android development involves creating applications for
+                    devices running the Android operating system, utilizing
+                    languages like Java and Kotlin.
+                  </p>
+                  <a href="#" class="btn btn-danger">Click here</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow-lg" style="width: 100%">
+                <img
+                  src="https://www.a3logics.com/wp-content/uploads/2024/01/Best-Android-App-Development-Tools-to-Use-in-2024.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Android Development</h5>
+                  <p class="card-text">
+                    Android development involves creating applications for
+                    devices running the Android operating system, utilizing
+                    languages like Java and Kotlin
+                  </p>
+                  <a href="#" class="btn btn-danger">Click here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-4">
+              <div class="card shadow-lg" style="width: 100%">
+                <img
+                  src="https://media.istockphoto.com/id/1297107315/photo/gamification-and-game-development-concept-in-neon-style.jpg?s=612x612&w=0&k=20&c=kjvU6RkcLlxVqmQLRVWdUgBeezgIyhjfsYQdCI29jLA="
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Game Development</h5>
+                  <p class="card-text">
+                    Game development is the process of creating video games,
+                    encompassing design, programming, art, and more, and can
+                    involve working individually or as part of a team.
+                  </p>
+                  <a href="#" class="btn btn-danger">Click here</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow-lg" style="width: 100%">
+                <img
+                  src="https://media.geeksforgeeks.org/wp-content/uploads/20230617194030/Getting-Started-with-iOS-Development.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">iOS Development</h5>
+                  <p class="card-text">
+                    iOS application development is the process of making mobile
+                    applications for Apple hardware, including iPhone, iPad and
+                    iPod Touch. The software is written.
+                  </p>
+                  <a href="#" class="btn btn-danger">Click here</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow-lg" style="width: 100%">
+                <img
+                  src="https://d2yn3p1o2oplij.cloudfront.net/2024/11/best-os-for-web-development-.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">OS Development</h5>
+                  <p class="card-text">
+                    OS (Operating System) development involves creating the
+                    software that manages computer hardware and software
+                    resources hardware and software resources
+                  </p>
+                  <a href="#" class="btn btn-danger">Click here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--servises end  -->
+      <!-- start gallary -->
+      <div class="row gallary">
+        <div class="h4 text-center">Our <b class="text-color1">Gallary</b></div>
+        <div class="col-10 mx-auto">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-3">
+                  <img
+                    src="https://6618495.fs1.hubspotusercontent-na1.net/hubfs/6618495/Blogs/Corporate%20Recruiting/Pros%20and%20Cons%20of%20Open%20Office%20Environment/Employees-working-in-open-office.jpg"
+                    alt=""
+                    class="img-thumbnail"
+                    style="height: 150px"
+                  />
+                  <img
+                    src="https://icm.aexp-static.com/content/dam/contenthub/us/en/ach-images/2023/10/small-office-header.jpg"
+                    alt=""
+                    class="img-thumbnail mt-3"
+                    style="height: 150px"
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <img
+                    src="https://www.designoffices.de/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F9mt55bm0937w%2F2p8uqXmuVCs4wsuJqkrQjr%2Ff3184b9ac7e65f091660802e264e520b%2FKey_Visual_Office_Spaces_Nuernberg_City_Flexible_Office_1.jpg&w=3840&q=75"
+                    alt=""
+                    class="img-thumbnail"
+                  />
+                </div>
+                <div class="col-sm-3">
+                  <img
+                    src="https://www.spiderbc.com/wp-content/uploads/2023/06/1.jpeg"
+                    alt=""
+                    class="img-thumbnail"
+                    style="height: 150px"
+                  />
+                  <img
+                    src="https://dbh-group.com/blog/wp-content/uploads/2023/05/3d-office-design-interior-2021-12-09-02-43-07-utc-scaled.jpg"
+                    alt=""
+                    class="img-thumbnail mt-3"
+                    style="height: 150px"
+                  />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-3">
+                  <img
+                    src="https://image.cnbcfm.com/api/v1/image/106724963-1601542574841-gettyimages-1248900510-262a5684.jpeg?v=1631893427&w=1920&h=1080"
+                    alt=""
+                    class="img-thumbnail mt-3"
+                  />
+                  <img
+                    src="https://cdn.sanity.io/images/uqxwe2qj/production/4ee9fb18bdc214aefebf7859557a6611125c3841-760x426.png?q=80&auto=format&fit=clip&w=760"
+                    alt=""
+                    class="img-thumbnail mt-5"
+                  />
+                </div>
+                <div class="col-sm-3">
+                  <img
+                    src="https://www.designoffices.de/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F9mt55bm0937w%2F1VhXxVR2AP6jpbAaXKdr4I%2F6ba92dd0b690f2b59fc2caae3991504f%2FKey-Visual_Flexible-Office_Frankfurt_Wiesenh__ttenplatz.jpg&w=3840&q=75"
+                    alt=""
+                    class="img-thumbnail"
+                  />
+                  <img
+                    src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?cs=srgb&dl=pexels-olly-927022.jpg&fm=jpg"
+                    alt=""
+                    class="img-thumbnail mt-2"
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <img
+                    src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?cs=srgb&dl=pexels-olly-927022.jpg&fm=jpg"
+                    alt=""
+                    class="img-thumbnail"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end gallary -->
+      <!-- start team -->
+      <div class="row mt-5 mx-auto team">
+        <div class="h4 text-center mb-5">
+          Our <b class="text-color1">Team</b>
+        </div>
+        <div class="col-sm-3">
+          <div class="card shadow-lg" style="width: 100%">
+            <img
+              src="https://wallpapers.com/images/featured/lord-hanuman-3d-hdbjwtra286taplo.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Lord Hanuman</h5>
+              <p class="card-text text-center">Sankat Mochan</p>
+              <div class="social-icons text-center">
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fab fa-facebook text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.whatsapp.com" target="_blank"
+                  ><i class="fab fa-whatsapp text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.linkedin.com" target="_blank"
+                  ><i class="fab fa-linkedin text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><i class="fab fa-instagram text-color1 fs-4 mx-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card shadow-lg" style="width: 100%">
+            <img
+              src="https://assets.entrepreneur.com/content/3x2/2000/1705903479-lordramanew.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Shri Ram Chandra</h5>
+              <p class="card-text text-center">The Supreme God</p>
+              <div class="social-icons text-center">
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fab fa-facebook text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.whatsapp.com" target="_blank"
+                  ><i class="fab fa-whatsapp text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.linkedin.com" target="_blank"
+                  ><i class="fab fa-linkedin text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><i class="fab fa-instagram text-color1 fs-4 mx-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card shadow-lg" style="width: 100%">
+            <img
+              src="https://cdn.magicdecor.in/com/2023/09/29155714/Krishna-wallpaper-for-Home.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Vashudev Shri Krishna</h5>
+              <p class="card-text text-center">World Developer</p>
+              <div class="social-icons text-center">
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fab fa-facebook text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.whatsapp.com" target="_blank"
+                  ><i class="fab fa-whatsapp text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.linkedin.com" target="_blank"
+                  ><i class="fab fa-linkedin text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><i class="fab fa-instagram text-color1 fs-4 mx-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card shadow-lg" style="width: 100%">
+            <img
+              src="https://cdn.pixabay.com/photo/2024/07/09/03/48/shiva-poster-8882316_1280.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Lord Shiva</h5>
+              <p class="card-text text-center">World Destroyer</p>
+              <div class="social-icons text-center">
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fab fa-facebook text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.whatsapp.com" target="_blank"
+                  ><i class="fab fa-whatsapp text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.linkedin.com" target="_blank"
+                  ><i class="fab fa-linkedin text-color1 fs-4 mx-2"></i
+                ></a>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><i class="fab fa-instagram text-color1 fs-4 mx-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end team -->
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <h5 class="modal-title mx-auto" id="staticBackdropLabel">
+              Login Form
+            </h5>
+
+            <div class="modal-body">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter Your Email.."
+                  aria-label="email"
+                  aria-describedby="basic-addon1"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fa-solid fa-key"></i>
+                </span>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Enter Your password..."
+                  aria-label="password"
+                  aria-describedby="basic-addon1"
+                />
+                <br />
+              </div>
+              <button class="btn btn-success" data-bs-dismiss="modal">
+                Login
+              </button>
+              <button class="btn btn-danger" data-bs-dismiss="modal">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end login modal -->
+      <!-- contact us modal start -->
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="ContactUS"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Username.."
+                  aria-label="email"
+                  aria-describedby="basic-addon1"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Mobile Number"
+                  aria-label="password"
+                  aria-describedby="basic-addon1"
+                />
+                <br />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter Your Email.."
+                  aria-label="email"
+                  aria-describedby="basic-addon1"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control resize-none"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-danger">Contact</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact us modal ends -->
+      <!-- footer Start -->
+      <div class="row bg-dark footer p-2 mt-5">
+        <div class="col-sm-4 ps-5">
+          <br /><br />
+          <img
+            src="images/f1.png"
+            alt=""
+            style="max-width: 200px"
+            class="img-fluid"
+          /><br /><br />
+          <img
+            src="images/f2.png"
+            alt=""
+            style="max-width: 200px"
+            class="img-fluid"
+          /><br /><br />
+          <img
+            src="images/f3.png"
+            alt=""
+            style="max-width: 200px"
+            class="img-fluid"
+          /><br />
+          <p class="text-light opacity-75 fw-bold">stay connected</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook text-light fs-5 mx-2"></i
+            ></a>
+            <a href="https://www.whatsapp.com" target="_blank"
+              ><i class="fab fa-whatsapp text-light fs-5 mx-2"></i
+            ></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fab fa-linkedin text-light fs-5 mx-2"></i
+            ></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram text-light fs-5 mx-2"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-sm-4 text-light mt-5">
+          <p class="fw-normal fs-5">Usefull Links</p>
+          <div class="links d-flex">
+            <ul class="list-grou">
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>services</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>gallary</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>summer
+                  training</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>winter
+                  training</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>apprentice</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>contact us</a
+                >
+              </li>
+            </ul>
+            <ul class="list-grou">
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>Home</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>about</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>services</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>gallary</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>summer
+                  training</a
+                >
+              </li>
+              <li class="list-group-item mt-3 opacity-75">
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-left me-2"></i>winter
+                  training</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="col-sm-4 text-light mt-5 w-100">
+            <p class="fw-normal fs-5">Contact Address</p>
+            <div class="links w-100 mt-4">
+              <ul class="list-gro">
+                <li class="list-group-item mt-3 opacity-75 w-50">
+                  <a href="#"
+                    ><i class="fa-solid fa-home me-2"></i>Plot No-43, Behind H.P
+                    Petrol Pump, Tedhi Pulia Ring Rd, Sector 5, Vikas Nagar,
+                    Lucknow, Uttar Pradesh 226022</a
+                  >
+                </li>
+                <li class="list-group-item mt-3 opacity-75">
+                  <a href="#"
+                    ><i class="fa-solid fa-phone me-2"></i>+91 45674567456</a
+                  >
+                </li>
+                <li class="list-group-item mt-3 opacity-75">
+                  <a href="#"
+                    ><i class="fa-solid fa-phone me-2"></i>+91 45674567456</a
+                  >
+                </li>
+                <li class="list-group-item mt-3 opacity-75">
+                  <a href="#"
+                    ><i class="fa-solid fa-envelope me-2"></i>abc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom row bg-dark">
+        <p class="text-center mt-5 text-light opacity-75">
+          Ⓒ 2025 <a class="text-color1">RajTechnosoft</a> 2025 | Developed By
+          <a class="text-color1">RajTechnosoft</a> Cell
+        </p>
+      </div>
+      <!-- footer end -->
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
